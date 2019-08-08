@@ -4,7 +4,7 @@ import Card from './Card'
 export default function CardContainer(props) {
 
     const characters = props.characters.map(character => {
-        return <Card character={character} />
+        return <Card key={character.id} changeActiveCard={props.changeActiveCard} character={character} />
     })
     return (
         <div className='card-container'>

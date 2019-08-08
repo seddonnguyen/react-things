@@ -9,14 +9,14 @@
 }
 
 .card-container {
-  width: 80%;
+  width: 70%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 .card {
   width: 300px;
-  height: auto;
+  height: max-content;
   box-shadow: 5px 5px 5px rgb(114, 114, 114);
   border-radius: 5px;
   padding: 10px;
