@@ -6,7 +6,7 @@ export default function Card(props) {
         props.changeActiveCard(character)
     }
     return (
-        <div className='card' onClick={() => handleClick(character)}>
+        <div className='card' onClick={() => props.id ? null : handleClick(character)}>
             <h3>{character.name}</h3>
             <img src={character.image} alt='name' />
             <p>Status: {character.status}</p>
