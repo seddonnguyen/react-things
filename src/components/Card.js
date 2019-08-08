@@ -8,6 +8,7 @@ export default function Card(props) {
     }
     return (
         <div className='card' onClick={() => props.id ? null : handleClick(character)}>
+            <h2>{props.id ? 'Active Card' :null}</h2>
             <h3>{character.name}</h3>
             <img src={character.image} alt='name' />
             <Attributes character={character}/>
