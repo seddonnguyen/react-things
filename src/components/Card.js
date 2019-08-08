@@ -1,4 +1,5 @@
 import React from 'react'
+import Attributes from './Attributes'
 
 export default function Card(props) {
     const {character} = props
@@ -9,9 +10,7 @@ export default function Card(props) {
         <div className='card' onClick={() => props.id ? null : handleClick(character)}>
             <h3>{character.name}</h3>
             <img src={character.image} alt='name' />
-            <p>Status: {character.status}</p>
-            <p>Species: {character.species}</p>
-            <p>Gender: {character.gender}</p>
+            <Attributes character={character}/>
         </div>
     )
 }
